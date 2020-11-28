@@ -1,0 +1,43 @@
+{
+    "name": "phaser-nextjs-skeleton",
+    "version": "1.0.0",
+    "description": "Simple template for Phaser 3 and Next.js app",
+    "main": "src/game.ts",
+    "scripts": {
+        "start": "next start",
+        "build": "npm run phaser:build && npm run next:build",
+        "next:dev": "next dev",
+        "next:build": "next build",
+        "next:start": "next start",
+        "phaser:dev": "rollup --config rollup.config.dev.js",
+        "phaser:build": "rollup --config rollup.config.dist.js",
+        "phaser:watch": "rollup --watch --config rollup.config.dev.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/tjlaxs/phaser-nextjs-skeleton.git"
+    },
+    "author": "Tero Laxström <tlax@neonpeons.com>",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/tjlaxs/phaser-nextjs-skeleton/issues"
+    },
+    "homepage": "https://github.com/tjlaxs/phaser-nextjs-skeleton#readme",
+    "dependencies": {
+        "next": "^10.0.0",
+        "react": "16.13.1",
+        "react-dom": "16.13.1"
+    },
+    "devDependencies": {
+        "@rollup/plugin-commonjs": "^16.0.0",
+        "@rollup/plugin-node-resolve": "^10.0.0",
+        "@rollup/plugin-replace": "^2.3.0",
+        "@types/react": "^17.0.0",
+        "phaser": "^3.24.1",
+        "rollup": "^2.33.1",
+        "rollup-plugin-serve": "^1.1.0",
+        "rollup-plugin-typescript2": "^0.29.0",
+        "rollup-plugin-uglify": "^6.0.4",
+        "typescript": "^3.7.4"
+    }
+}
