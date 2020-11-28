@@ -4,7 +4,7 @@
     "description": "Simple template for Phaser 3 and Next.js app",
     "main": "src/game.ts",
     "scripts": {
-        "start": "next start",
+        "start": "next start -p $PORT",
         "build": "npm run phaser:build && npm run next:build",
         "next:dev": "next dev",
         "next:build": "next build",
